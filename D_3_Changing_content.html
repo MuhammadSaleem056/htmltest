@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p class="main-paragraph"> This is an example </p>
+	<p> and this is the second paragraph </p>
+	<button onclick = "change1()"> Change First paragraph </button>
+	<button onclick = "change2()"> Change all paragraphs </button>
+	<button onclick = "change3()"> Change with Html </button>
+	<button onclick = "change4()"> Change with text </button>
+<script src="https://d3js.org/d3.v6.min.js"> </script>
+<script type="text/javascript">
+	
+	function change1(){
+
+		let p = d3.select(".main-paragraph")
+		p.text("Muhammad is the great person")
+
+	}
+	function change2(){
+		let p1 = d3.selectAll("p").text("great great")
+
+
+	}
+
+	function change3(){
+		d3.select("p")
+			.html("<b>test</b> normal")
+
+	}
+
+	function change4(){
+
+		d3.select("p")
+			.text("<b>test</b> normal")
+
+	}
+
+
+
+</script>
+
+</body>
+</html>
